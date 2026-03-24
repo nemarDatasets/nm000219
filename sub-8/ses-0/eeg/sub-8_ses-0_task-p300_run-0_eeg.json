@@ -1,0 +1,42 @@
+{
+	"TaskName": "p300",
+	"Manufacturer": "Brain Products",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 250.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "re-referenced to average of left and right mastoid, 4th order zero-phase IIR Butterworth bandpass filter (1.0-12.5 Hz), resampled to 50 Hz, epoched from stimulus onset to 750 ms after"
+		}
+	},
+	"RecordingDuration": 2687.996,
+	"RecordingType": "continuous",
+	"EEGReference": "right mastoid",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "extended 10-20",
+	"EEGChannelCount": 30,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "BrainAmp DC Amplifier",
+	"CapManufacturer": "Brain Products GmbH",
+	"SoftwareVersions": "n/a",
+	"HardwareFilters": {
+		"Bandpass": {
+			"LowCutoffFrequency": 1.0,
+			"HighCutoffFrequency": 12.5,
+			"Type": "Butterworth IIR",
+			"Order": 4
+		}
+	},
+	"Instructions": "Respond to yes/no questions by shifting attention to green cross (yes) or red cross (no) while maintaining central gaze fixation",
+	"CogAtlasID": "https://www.cognitiveatlas.org/task/id/tsk_GxjZBNiJorj1K/",
+	"InstitutionName": "Leibniz Institute for Neurobiology",
+	"InstitutionAddress": "Magdeburg, Germany",
+	"InstitutionalDepartmentName": "Department of Behavioral Neurology",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "Gaze-independent brain-computer interface based on covert spatial attention shifts for binary (yes/no) communication",
+	"MISCChannelCount": 0
+}

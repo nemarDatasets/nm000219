@@ -1,0 +1,192 @@
+_dataset:
+  class: BNCI2020_002
+  code: BNCI2020-002
+  doi: 10.3389/fnins.2020.591777
+  interval:
+  - 0
+  - 16
+  n_subjects: 18
+  paradigm: p300
+acquisition:
+  auxiliary_channels:
+    eog_channels: 2
+    eog_type:
+    - horizontal
+    - vertical
+    has_eog: true
+  cap_manufacturer: Brain Products GmbH
+  channel_types:
+    eeg: 30
+    eog: 2
+  filters: 0.1 Hz highpass
+  hardware: BrainAmp DC Amplifier
+  line_freq: 50.0
+  montage: extended 10-20
+  n_channels: 30
+  reference: right mastoid
+  sampling_rate: 250.0
+  sensor_type: Ag/AgCl electrodes
+  sensors:
+  - C3
+  - C4
+  - CP1
+  - CP2
+  - Cz
+  - F3
+  - F4
+  - F7
+  - F8
+  - FC1
+  - FC2
+  - Fp1
+  - Fp2
+  - Fz
+  - HEOG
+  - IZ
+  - LMAST
+  - O10
+  - O9
+  - Oz
+  - P3
+  - P4
+  - P7
+  - P8
+  - PO3
+  - PO4
+  - PO7
+  - PO8
+  - Pz
+  - T7
+  - T8
+  - VEOG
+bci_application:
+  applications:
+  - communication
+  - binary decision
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: leave-one-out cross-validation (LOOCV)
+  evaluation_type:
+  - within_subject
+data_structure:
+  n_blocks: 7
+  n_trials: 24
+  trials_context: per_block
+documentation:
+  associated_paper_doi: 10.3389/fnins.2020.591777
+  contact_info:
+  - christoph.reichert@lin-magdeburg.de
+  country: Germany
+  data_url: http://bnci-horizon-2020.eu/database/data-sets
+  description: Gaze-independent brain-computer interface based on covert spatial attention shifts for binary (yes/no) communication
+  doi: 10.3389/fnins.2020.591777
+  ethics_approval:
+  - Ethics Committee of the Otto-von-Guericke University, Magdeburg
+  funding:
+  - German Ministry of Education and Research (BMBF) within the Research Campus STIMULATE under grant number 13GW0095D
+  institution: Leibniz Institute for Neurobiology
+  institution_address: Magdeburg, Germany
+  institution_department: Department of Behavioral Neurology
+  investigators:
+  - Christoph Reichert
+  - Igor Fabian Tellez Ceja
+  - Catherine M. Sweeney-Reed
+  - Hans-Jochen Heinze
+  - Hermann Hinrichs
+  - Stefan Dürschmid
+  keywords:
+  - visual spatial attention
+  - brain-computer interface
+  - stimulus features
+  - N2pc
+  - canonical correlation analysis
+  - gaze-independent
+  - BCI
+  license: CC-BY-4.0
+  publication_year: 2020
+  repository: BNCI Horizon
+  senior_author: Stefan Dürschmid
+experiment:
+  class_labels:
+  - NonTarget
+  - Target
+  events:
+    green_cross_yes: 1
+    red_cross_no: 2
+  feedback_type: visual (yes/no text)
+  has_training_test_split: true
+  instructions: Respond to yes/no questions by shifting attention to green cross (yes) or red cross (no) while maintaining
+    central gaze fixation
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    duration_ms: '250'
+    soa_ms: 850 (jittered by 0-250 ms)
+    stimuli_per_trial: '10'
+  stimulus_type: colored crosses (green + and red x)
+  synchronicity: synchronous
+  task_type: binary decision
+file_format: MAT
+paradigm_specific:
+  detected_paradigm: p300
+  n_repetitions: 10
+  n_targets: 2
+  soa_ms: 850.0
+participants:
+  age_max: 38.0
+  age_mean: 27.0
+  age_min: 19.0
+  gender:
+    female: 10
+    male: 8
+  health_status: healthy
+  n_subjects: 18
+  species: human
+performance:
+  accuracy_percent: 88.5
+  itr_bits_per_min: 3.02
+  max_accuracy: 90.3
+  min_accuracy: 70.8
+  std_accuracy: 7.8
+preprocessing:
+  bandpass:
+  - 1.0
+  - 12.5
+  data_state: raw
+  downsampled_to_hz: 50.0
+  epoch_window:
+  - 0.0
+  - 0.75
+  filter_order: 4
+  filter_type: Butterworth IIR
+  highpass_hz: 1.0
+  lowpass_hz: 12.5
+  preprocessing_steps:
+  - re-referenced to average of left and right mastoid
+  - 4th order zero-phase IIR Butterworth bandpass filter (1.0-12.5 Hz)
+  - resampled to 50 Hz
+  - epoched from stimulus onset to 750 ms after
+  re_reference: average of left and right mastoid
+runs_per_session: 1
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - Canonical Correlation Analysis (CCA)
+  feature_extraction:
+  - N2pc
+  - ERP
+  - Canonical difference waves
+  spatial_filters:
+  - CCA spatial filters
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - Attention

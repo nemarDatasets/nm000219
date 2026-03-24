@@ -1,0 +1,49 @@
+{
+	"Name": "BNCI 2020-002 Attention Shift (Covert Spatial Attention) dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-4.0",
+	"Authors": [
+		"Christoph Reichert",
+		"Igor Fabian Tellez Ceja",
+		"Catherine M. Sweeney-Reed",
+		"Hans-Jochen Heinze",
+		"Hermann Hinrichs",
+		"Stefan D\u00fcrschmid"
+	],
+	"Funding": [
+		"German Ministry of Education and Research (BMBF) within the Research Campus STIMULATE under grant number 13GW0095D"
+	],
+	"EthicsApprovals": [
+		"Ethics Committee of the Otto-von-Guericke University, Magdeburg"
+	],
+	"ReferencesAndLinks": [
+		"http://bnci-horizon-2020.eu/database/data-sets",
+		"10.3389/fnins.2020.591777"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.3389/fnins.2020.591777",
+			"URL": "http://bnci-horizon-2020.eu/database/data-sets"
+		}
+	],
+	"Keywords": [
+		"visual spatial attention",
+		"brain-computer interface",
+		"stimulus features",
+		"N2pc",
+		"canonical correlation analysis",
+		"gaze-independent",
+		"BCI"
+	],
+	"PublicationYear": 2020
+}
