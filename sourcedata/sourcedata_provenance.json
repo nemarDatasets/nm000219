@@ -1,0 +1,105 @@
+{
+ "dataset": "nm000219",
+ "moabb_class": "BNCI2020_002",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.BNCI2020_002.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-bnci-data/database/data-sets/002-2020",
+ "license": "CC-BY-4.0",
+ "doi": "10.3389/fnins.2020.591777",
+ "naming": "upstream_filenames_restored",
+ "n_files": 18,
+ "total_bytes": 880932941,
+ "files": [
+  {
+   "file": "P01.mat",
+   "bytes": 33430340,
+   "sha256": "5d2952dfa1b140166ee1b657ae40c9f55bc82dd751296a9a6247d22deb7fe5a2"
+  },
+  {
+   "file": "P02.mat",
+   "bytes": 49009550,
+   "sha256": "8ee1fd2b9ea3e101e299951af4b69893136b4ad395b5bf16e3189694076989d2"
+  },
+  {
+   "file": "P03.mat",
+   "bytes": 46855006,
+   "sha256": "9550b5ca875dedcc3d124bc94a62d78e2d6424acf3ef41df1c1cf3ccb699ea25"
+  },
+  {
+   "file": "P04.mat",
+   "bytes": 51139373,
+   "sha256": "8da9764326404a66832af70371d48723bf3edd7c9262a18b7d8e1e5d383146ac"
+  },
+  {
+   "file": "P05.mat",
+   "bytes": 52308129,
+   "sha256": "08fbf516eb75f8fa731bfe94d0bfb37deb06ef138d8a3a8f2f6e4c31aef1f6ec"
+  },
+  {
+   "file": "P06.mat",
+   "bytes": 46183411,
+   "sha256": "1aa0f062009fa0c1e1e9e4c2ed964680ed1f0ac5d23276337da8faaa03488c89"
+  },
+  {
+   "file": "P07.mat",
+   "bytes": 49227783,
+   "sha256": "d327db75658fa1dc32f1ec131d32eaa99d9b774a4727b832fa9d567748dcdd18"
+  },
+  {
+   "file": "P08.mat",
+   "bytes": 50532341,
+   "sha256": "11c9fda94df63108e4ab079d12cb25256da656efeed127d7c8c17956db3a7d9b"
+  },
+  {
+   "file": "P09.mat",
+   "bytes": 49199949,
+   "sha256": "4c253ef4f1030ce092ce8a78a55f910b463115e637b26b166c8a8705016331f9"
+  },
+  {
+   "file": "P10.mat",
+   "bytes": 49307949,
+   "sha256": "4799f36b86fd87d798f98da1ac770873e73f4e70b4c39bbe699f0a399406e9fc"
+  },
+  {
+   "file": "P11.mat",
+   "bytes": 48155958,
+   "sha256": "c4658212f08f9e70ca42e10b1f683f58a1c0faa28aba2623de6b5da6807d5fcf"
+  },
+  {
+   "file": "P12.mat",
+   "bytes": 50896617,
+   "sha256": "7ee61781f5afc26f4888b8bedc5c4e3d6e4cd5da6f59ae156e72d6b1eb2adcaf"
+  },
+  {
+   "file": "P13.mat",
+   "bytes": 49246960,
+   "sha256": "f1ab27e4ebf747c3b065dfe1e0536349729a733282b694d64d3e17405ff8109d"
+  },
+  {
+   "file": "P14.mat",
+   "bytes": 50148001,
+   "sha256": "7a7a06f436b8bb53972153e1ca29462393b3ed536a01210f1d50209c003a3a14"
+  },
+  {
+   "file": "P15.mat",
+   "bytes": 49776591,
+   "sha256": "369c5bf9561a0c105a95ce02c93707f567d3c33e7d6192a72cfa6f08a2314127"
+  },
+  {
+   "file": "P16.mat",
+   "bytes": 54802630,
+   "sha256": "b214540649a589a2b913ac13381ef6fbc473f7365bd9582c1b36f5984aa85598"
+  },
+  {
+   "file": "P17.mat",
+   "bytes": 51890034,
+   "sha256": "027ba398fbcffa5d46a49a45c222eafb42b7217d2f1533494a589e3029bc2c7b"
+  },
+  {
+   "file": "P18.mat",
+   "bytes": 48822319,
+   "sha256": "5d8ddf9b156df201a5f1dc7a8e701455928a07af037bff6c18d4bd8ad5865e67"
+  }
+ ]
+}
