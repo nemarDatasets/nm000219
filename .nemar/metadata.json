@@ -1,6 +1,11 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
+  "title": "BNCI 2020-002 Attention Shift (Covert Spatial Attention) dataset",
+  "description": "A gaze-independent brain-computer interface dataset based on covert spatial attention shifts for binary communication. This EEG dataset comprises recordings from 18 healthy participants performing a visual attention task with N2pc event-related potential detection. The paradigm uses colored visual stimuli (green crosses for 'yes', red crosses for 'no') while participants maintain central gaze fixation. The original study reported 88.5% mean accuracy with canonical correlation analysis classification.",
+  "methods_description": "EEG data were acquired from 18 healthy participants (8 male, 10 female; mean age 27 years) using a 30-channel BrainAmp DC amplifier with Ag/AgCl electrodes in extended 10-20 montage, sampled at 250 Hz with right mastoid reference. Online highpass filtering at 0.1 Hz was applied during acquisition. Participants performed a binary decision task responding to yes/no questions by covertly shifting attention to colored visual stimuli (250 ms duration, 850 ms stimulus onset asynchrony) while maintaining fixation. Each session contained 7 blocks with 24 trials total.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Christoph Reichert": {},
     "Igor Fabian Tellez Ceja": {},
@@ -9,6 +14,26 @@
     "Hermann Hinrichs": {},
     "Stefan Dürschmid": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "covert spatial attention"
+    },
+    {
+      "term": "N2pc"
+    },
+    {
+      "term": "canonical correlation analysis"
+    },
+    {
+      "term": "gaze-independent BCI"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.3389/fnins.2020.591777",
@@ -21,11 +46,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000219",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -34,6 +54,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000219",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -43,52 +68,22 @@
       "award_title": "Research Campus STIMULATE"
     }
   ],
-  "title": "BNCI 2020-002 Attention Shift (Covert Spatial Attention) dataset",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "1.1 GB (19 files)"
+    "2.0 GB (37 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "A gaze-independent brain-computer interface dataset based on covert spatial attention shifts for binary communication. This EEG dataset comprises recordings from 18 healthy participants performing a visual P300 paradigm with colored stimulus presentation (green crosses for 'yes', red crosses for 'no'). The dataset demonstrates N2pc event-related potential detection and canonical correlation analysis for BCI classification, achieving 88.5% mean accuracy with potential applications in communication and assistive technology.",
-  "methods_description": "EEG data were acquired from 18 healthy participants (8 male, 10 female; mean age 27 years) using a BrainAmp DC amplifier with 30 Ag/AgCl electrodes in extended 10-20 montage, sampled at 250 Hz with right mastoid reference. Participants performed a binary decision task responding to yes/no questions by covertly shifting attention to green (yes) or red (no) colored crosses presented for 250 ms with 850 ms stimulus onset asynchrony (jittered 0-250 ms). Online visual feedback was provided. Data were preprocessed with 1.0-12.5 Hz bandpass filtering, re-referenced to bilateral mastoid average, and resampled to 50 Hz.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "covert spatial attention"
-    },
-    {
-      "term": "P300"
-    },
-    {
-      "term": "N2pc"
-    },
-    {
-      "term": "canonical correlation analysis"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    }
-  ],
-  "source_hash": "43055f1baabb3f5e0f039588916c4ca833497590992bfda38268ce5ec799900e"
+  "source_hash": "2c4f03418d630e83da6939d8297c2da30df65446756e35528454c39a2a15994f"
 }
