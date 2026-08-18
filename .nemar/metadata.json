@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "BNCI 2020-002 Attention Shift (Covert Spatial Attention) dataset",
-  "description": "A gaze-independent brain-computer interface dataset based on covert spatial attention shifts for binary communication. This EEG dataset comprises recordings from 18 healthy participants performing a visual attention task with N2pc event-related potential detection. The paradigm uses colored visual stimuli (green crosses for 'yes', red crosses for 'no') while participants maintain central gaze fixation. The original study reported 88.5% mean accuracy with canonical correlation analysis classification.",
-  "methods_description": "EEG data were acquired from 18 healthy participants (8 male, 10 female; mean age 27 years) using a 30-channel BrainAmp DC amplifier with Ag/AgCl electrodes in extended 10-20 montage, sampled at 250 Hz with right mastoid reference. Online highpass filtering at 0.1 Hz was applied during acquisition. Participants performed a binary decision task responding to yes/no questions by covertly shifting attention to colored visual stimuli (250 ms duration, 850 ms stimulus onset asynchrony) while maintaining fixation. Each session contained 7 blocks with 24 trials total.",
+  "description": "A gaze-independent brain-computer interface dataset based on covert spatial attention shifts for binary communication. This EEG dataset comprises recordings from 18 healthy participants performing a visual attention task with N2pc event-related potential detection. The paradigm uses colored visual stimuli (green crosses for 'yes', red crosses for 'no') presented while maintaining central gaze fixation, achieving 88.5% mean accuracy with canonical correlation analysis classification.",
+  "methods_description": "EEG data were acquired from 18 healthy participants (8 male, 10 female; mean age 27 years) using a 30-channel BrainAmp DC amplifier with Ag/AgCl electrodes in extended 10-20 montage, sampled at 250 Hz with right mastoid reference. Online highpass filtering at 0.1 Hz was applied during acquisition. Stimuli consisted of colored crosses (250 ms duration) presented with 850 ms stimulus onset asynchrony (jittered 0-250 ms). Data were preprocessed with re-referencing to bilateral mastoid average, 4th-order Butterworth bandpass filtering (1.0-12.5 Hz), downsampling to 50 Hz, and epoching from stimulus onset to 750 ms post-stimulus.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -25,7 +25,13 @@
       "term": "covert spatial attention"
     },
     {
+      "term": "visual spatial attention"
+    },
+    {
       "term": "N2pc"
+    },
+    {
+      "term": "Event-Related Potentials"
     },
     {
       "term": "canonical correlation analysis"
@@ -85,5 +91,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "2c4f03418d630e83da6939d8297c2da30df65446756e35528454c39a2a15994f"
+  "source_hash": "777e6142d284c23e6cfbb9e4f14c66541237bbca92a850fa0c3920e8f5b864e3"
 }
