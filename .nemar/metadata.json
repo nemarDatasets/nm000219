@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2020-002 Attention Shift (Covert Spatial Attention) dataset",
-  "description": "EEG recordings from 18 healthy participants performing a gaze-independent brain-computer interface task based on covert spatial attention shifts. Participants answered yes/no questions by directing attention to a green or red cross while maintaining central fixation, and the resulting N2pc-related responses were classified with canonical correlation analysis. The dataset is a BIDS-formatted derivative of the BNCI Horizon 2020 data, distributed via MOABB.",
-  "methods_description": "EEG was recorded from 30 channels plus 2 EOG channels using a BrainAmp DC amplifier with Ag/AgCl electrodes (extended 10-20 montage, right mastoid reference, 250 Hz sampling rate). Colored crosses (green + and red x) were presented for 250 ms with an SOA of 850 ms (jittered), in 10 repetitions per trial across 7 blocks. Analysis used re-referencing to averaged mastoids, 1.0-12.5 Hz Butterworth bandpass filtering, downsampling to 50 Hz, and epoching 0-750 ms after stimulus onset.",
+  "description": "EEG recordings from 18 healthy participants performing a gaze-independent brain-computer interface task based on covert spatial attention shifts. Participants answered yes/no questions by shifting attention to a green or red cross while keeping central gaze fixation, evoking N2pc-type ERP responses. The dataset (30 EEG channels plus EOG, 250 Hz) supports evaluation of canonical correlation analysis-based classification for binary communication BCIs.",
+  "methods_description": "EEG was recorded with a BrainAmp DC amplifier and Ag/AgCl electrodes (extended 10-20 montage, right mastoid reference, 250 Hz sampling, 0.1 Hz high-pass). Colored crosses (green + and red x) were presented for 250 ms with an SOA of 850 ms (jittered), ten stimuli per trial, across 7 blocks. Participants shifted covert attention to the cross matching their yes/no answer while maintaining central fixation.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -28,13 +28,15 @@
       "term": "N2pc"
     },
     {
-      "term": "canonical correlation analysis"
-    },
-    {
       "term": "gaze-independent BCI"
     },
     {
-      "term": "event-related potentials"
+      "term": "canonical correlation analysis"
+    },
+    {
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
     }
   ],
   "related_identifiers": [
@@ -88,5 +90,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "777e6142d284c23e6cfbb9e4f14c66541237bbca92a850fa0c3920e8f5b864e3"
+  "source_hash": "c5dd957bb0b5a2e2011840d08be329266f84bfb66cca848cf0d07e0c176a8d91"
 }
